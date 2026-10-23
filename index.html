@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaNet</title>
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-globe2"></i> PizzaNet
+                <p class="card-text text-muted">Modelo de dominio (UML) virnaod um programa: Monte um pedido e veja os objetos mudando em tempo real 
+                </p>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sn ms-lg-3 nt-lg-2 nt-lg-0" id="btnTema">
+                            <i class="bi bi-moon-stars-fill"></i> tema
+                        </button>
+                    </li>
+                </ul>
+            </div> 
+
+        </div>
+        
+    </nav>
+    </header>
+    <main>
+        <section id="Cardapio" class="py-5 mt-5">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h1 class="display-4 fw-bold">Cardapio</h1>
+                        <p class="lead text-muted">exe</p>
+                    </div>   
+                    <div class="">
+                        <!--Pedido-->
+                        <div class="col-md-4 md-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Pedido</h5>
+                                <Label> Cliente <input type="text" id="Nome" clas="form-label" placeholder="Nome"></Label>
+                                <Label> Endereço de Entrega <input type="text" id="Endereço" clas="form-label" placeholder="Rua da antrega"></Label>
+                                <Label> Cidade <input type="text" id="Cidade" clas="form-label" placeholder="Nome"></Label>
+                                <h3>Itens</h3>
+                                <div id="Itens" class="Mut"> Nenhum</div>
+                                <div class="tot">
+                                    <span>Total</span><span id="Total" class="card-text text-muted">r$ 00,00</span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Pagamento -->
+                    <div class="col-md-4 md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Pagamento</h5>
+                                <p class="card-text text-muted"> Escolha a forma de pagamento</p>
+                                <select>
+                                    <option>Pix</option>
+                                    <option>Cartão</option>
+                                    <option>Dinheiro</option>
+                                    <option>Na fé</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="col-md-4 md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Personalizavel</h5>
+                                <p class="card-text text-muted"> Fácil de adaptar um CSS Personalizavel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="py-5 bg-ligth">
+            <div class="container">
+                <h2 class="text-center md-5 fw-bold ">Sobre o Projeto</h2>
+            </div>
+
+        </section>
+    </main>
+</html>
